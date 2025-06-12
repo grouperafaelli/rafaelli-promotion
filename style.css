@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -29,14 +30,13 @@ header .contact-btn {
 .hero {
   background: url('https://images.unsplash.com/photo-1560185127-6ed189bf02c4') center/cover no-repeat;
   color: white;
-  padding: 80px 40px;
+  padding: 100px 40px;
   position: relative;
 }
-.hero::after {
-  content: "";
-  background: rgba(0, 22, 51, 0.7);
+.hero .overlay {
   position: absolute;
   inset: 0;
+  background: rgba(0, 22, 51, 0.75);
   z-index: 0;
 }
 .hero-content {
@@ -51,7 +51,7 @@ header .contact-btn {
 }
 .hero .badges {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   font-size: 16px;
 }
 .section {
@@ -62,31 +62,44 @@ header .contact-btn {
   font-size: 24px;
   margin-bottom: 10px;
 }
+.subtext {
+  color: #555;
+  margin-bottom: 30px;
+}
 .info-grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 30px;
+  gap: 30px;
 }
 .info-box {
   flex: 1;
   min-width: 200px;
+  text-align: center;
+}
+.card {
+  background: #f1f4f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
 }
 .before-after {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
 }
 .before-after img {
   width: 100%;
-  border: 1px solid #ccc;
+  max-width: 350px;
   border-radius: 8px;
 }
-.financement {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
-  background: #f1f4f9;
+.center {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.financement p {
+  margin: 10px 0;
 }
 .form-section input {
   width: 100%;
