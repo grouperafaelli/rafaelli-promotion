@@ -1,1 +1,0 @@
-console.log('Rafaelli Promotion Ready');
