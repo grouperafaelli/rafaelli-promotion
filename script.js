@@ -1,0 +1,1 @@
+// JS ready for future slider/filters if needed

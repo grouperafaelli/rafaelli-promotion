@@ -1,126 +1,108 @@
 
 body {
-  font-family: 'Inter', sans-serif;
   margin: 0;
-  background: #f8f9fb;
-  color: #1e1e1e;
+  font-family: 'Inter', sans-serif;
+  background: #f5f7fb;
+  color: #1a1a1a;
 }
 header {
-  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  border-bottom: 1px solid #ddd;
+  background: #0c1f4a;
+  padding: 15px 40px;
+  color: white;
+}
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
 }
 header nav a {
-  margin: 0 15px;
+  margin: 0 12px;
+  color: white;
   text-decoration: none;
-  color: #1e1e1e;
   font-weight: 500;
 }
-header .contact-btn {
-  background: #001633;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
+header .buttons button {
+  margin-left: 10px;
+  padding: 8px 16px;
   font-weight: bold;
-  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+}
+.login {
+  background: white;
+  color: #0c1f4a;
+}
+.register {
+  background: #f23557;
+  color: white;
 }
 .hero {
-  background: url('https://images.unsplash.com/photo-1560185127-6ed189bf02c4') center/cover no-repeat;
-  color: white;
-  padding: 100px 40px;
   position: relative;
 }
-.hero .overlay {
+.hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.property-card {
   position: absolute;
-  inset: 0;
-  background: rgba(0, 22, 51, 0.75);
-  z-index: 0;
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 900px;
-}
-.hero h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.hero .badges {
-  display: flex;
-  gap: 30px;
-  font-size: 16px;
-}
-.section {
-  padding: 60px 40px;
+  right: 50px;
+  top: 50px;
   background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-.section h2 {
+.property-card h3 {
+  margin: 10px 0 0;
+}
+.property-card .price {
   font-size: 24px;
-  margin-bottom: 10px;
+  color: #f23557;
 }
-.subtext {
-  color: #555;
-  margin-bottom: 30px;
-}
-.info-grid {
+.property-card .icons {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  font-size: 12px;
+  margin-top: 10px;
 }
-.info-box {
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
+.search-bar {
+  background: #0c1f4a;
+  color: white;
+  padding: 20px 40px;
 }
-.card {
-  background: #f1f4f9;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 20px;
+.search-tabs button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
 }
-.before-after {
+.search-tabs .active {
+  background: #f23557;
+  color: white;
+}
+.filters {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 10px;
+  margin-top: 15px;
 }
-.before-after img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 8px;
-}
-.center {
-  text-align: center;
-  margin-top: 8px;
-  font-weight: bold;
-}
-.financement p {
-  margin: 10px 0;
-}
-.form-section input {
-  width: 100%;
+.filters select, .filters input {
   padding: 10px;
-  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
 }
-.form-section button {
-  width: 100%;
-  background: #001633;
+.search-btn {
+  background: #f23557;
   color: white;
   border: none;
-  padding: 12px;
+  padding: 10px 20px;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 4px;
 }
-footer {
-  padding: 30px 40px;
-  background: white;
-  font-size: 14px;
-  color: #666;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.info-section {
+  padding: 40px;
+  text-align: center;
 }
